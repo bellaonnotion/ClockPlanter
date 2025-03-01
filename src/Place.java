@@ -1,6 +1,7 @@
 package src;
 
 public class Place {
+    
 
     public void Draw0() {
         boolean a = true;

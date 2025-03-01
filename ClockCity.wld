@@ -1,0 +1,13 @@
+# City saved on 2020/2/1@23:18:53
+
+# Window title
+U1A1: Robot Clear Maze
+# first street, first avenue, num streets, num avenues
+0 0 10 10
+# intersection size
+48
+#things
+becker.robots.Thing 3 11
+becker.robots.Thing 5 11
+
+

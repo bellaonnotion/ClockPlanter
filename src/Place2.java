@@ -13,15 +13,22 @@ public class Place2 extends Place implements Runnable {
    public void run() {
         Segment segment = null;
 
-        segment = new SegmentA(clockCity, 1, 1, Direction.EAST);
-        segment = new SegmentB(clockCity, 1, 1, Direction.EAST);
-        segment = new SegmentC(clockCity, 1, 1, Direction.EAST);
-        segment = new SegmentD(clockCity, 1, 1, Direction.EAST);
-        segment = new SegmentE(clockCity, 1, 1, Direction.EAST);
-        segment = new SegmentF(clockCity, 1, 1, Direction.EAST);
-        segment = new SegmentG(clockCity, 1, 1, Direction.EAST);
-
+        segment = new SegmentA(clockCity, 1, 6, Direction.EAST, 100);
         segment.drawLine();
+        segment = new SegmentB(clockCity, 1, 9, Direction.SOUTH, 100);
+        segment.drawLine();
+        segment = new SegmentC(clockCity, 4, 9, Direction.SOUTH, 100);
+        segment.drawLine();
+        segment = new SegmentD(clockCity, 7, 9, Direction.WEST, 100);
+        segment.drawLine();
+        segment = new SegmentE(clockCity, 7, 6, Direction.NORTH, 100);
+        segment.drawLine();
+        segment = new SegmentF(clockCity, 4, 6, Direction.NORTH, 100);
+        segment.drawLine();
+        segment = new SegmentG(clockCity, 4, 9, Direction.WEST, 100);
+        segment.drawLine();
+
+      
 
 
 

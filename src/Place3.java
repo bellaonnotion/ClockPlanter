@@ -1,33 +1,34 @@
 package src;
+
 import becker.robots.*;
 
 //heximal
 
 public class Place3 extends Place implements Runnable {
-    public City clockCity = null;
+   public City clockCity = null;
 
-    public Place3(City cc) {
-		clockCity = cc;
-	}
-
-   public void run() {
-        Segment segment = null;
-
-        segment = new SegmentA(clockCity, 1, 1, Direction.EAST);
-        segment = new SegmentB(clockCity, 1, 1, Direction.EAST);
-        segment = new SegmentC(clockCity, 1, 1, Direction.EAST);
-        segment = new SegmentD(clockCity, 1, 1, Direction.EAST);
-        segment = new SegmentE(clockCity, 1, 1, Direction.EAST);
-        segment = new SegmentF(clockCity, 1, 1, Direction.EAST);
-        segment = new SegmentG(clockCity, 1, 1, Direction.EAST);
-
-        segment.drawLine();
-
-
-
-
-
+   public Place3(City cc) {
+      clockCity = cc;
    }
 
+   public void run() {
+      Segment segment = null;
+
+      segment = new SegmentA(clockCity, 1, 13, Direction.EAST, 100);
+      segment.drawLine();
+      segment = new SegmentB(clockCity, 1, 16, Direction.SOUTH, 100);
+      segment.drawLine();
+      segment = new SegmentC(clockCity, 4, 16, Direction.SOUTH, 100);
+      segment.drawLine();
+      segment = new SegmentD(clockCity, 7, 16, Direction.WEST, 100);
+      segment.drawLine();
+      segment = new SegmentE(clockCity, 7, 13, Direction.NORTH, 100);
+      segment.drawLine();
+      segment = new SegmentF(clockCity, 4, 13, Direction.NORTH, 100);
+      segment.drawLine();
+      segment = new SegmentG(clockCity, 4, 16, Direction.WEST, 100);
+      segment.drawLine();
+
+   }
 
 }
