@@ -6,4 +6,8 @@ public class SegmentG extends Segment {
     public SegmentG(City city, int street, int avenue, Direction direction) {
         super(city, street, avenue, direction);
     }
+
+    public void drawSegment() {
+    
+    }
 }

@@ -3,7 +3,7 @@ import becker.robots.*;
 
 //heximal
 
-public class Place3 implements Runnable {
+public class Place3 extends Place implements Runnable {
     public City clockCity = null;
 
     public Place3(City cc) {
@@ -20,6 +20,8 @@ public class Place3 implements Runnable {
         segment = new SegmentE(clockCity, 1, 1, Direction.EAST);
         segment = new SegmentF(clockCity, 1, 1, Direction.EAST);
         segment = new SegmentG(clockCity, 1, 1, Direction.EAST);
+
+        segment.drawLine();
 
 
 

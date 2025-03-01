@@ -8,4 +8,8 @@ public class SegmentA extends Segment {
         super(city, street, avenue, direction);
     }
 
+    public void drawSegment() {
+    
+    }
+
 }

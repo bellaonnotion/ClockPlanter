@@ -3,7 +3,7 @@ import becker.robots.*;
 
 //decimal
 
-public class Place4 implements Runnable {
+public class Place4 extends Place implements Runnable {
     public City clockCity = null;
 
     public Place4(City cc) {
@@ -20,6 +20,8 @@ public class Place4 implements Runnable {
         segment = new SegmentE(clockCity, 1, 1, Direction.EAST);
         segment = new SegmentF(clockCity, 1, 1, Direction.EAST);
         segment = new SegmentG(clockCity, 1, 1, Direction.EAST);
+
+        segment.drawLine();
 
 
 
