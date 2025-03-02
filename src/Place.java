@@ -1,7 +1,11 @@
 package src;
 
+
+
+
 public class Place {
     
+    //int[] arr = {}
 
     public void Draw0() {
         boolean a = true;

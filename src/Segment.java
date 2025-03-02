@@ -8,7 +8,9 @@ public abstract class Segment extends RobotSE {
 
     public Segment(City city, int street, int avenue, Direction direction, int numThings) {
         super(city, street, avenue, direction, numThings);
-    }
+        this.setIcon(new CustomIcon());  // Apply the custom icon
+        }
+    
 
     public abstract void drawSegment();
 
