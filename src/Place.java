@@ -1,6 +1,13 @@
 package src;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class Place {
+
+
+    LocalTime time = LocalTime.now();
+    String myTime = (DateTimeFormatter.ofPattern("h:mm").format(time));
+
 
     String string0 = "1000000";
     String string1 = "1111001";

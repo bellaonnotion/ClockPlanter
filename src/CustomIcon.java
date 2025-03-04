@@ -18,7 +18,7 @@ public class CustomIcon extends Icon {
 
     
     protected void paintIcon(Graphics g) {
-        g.setColor(Color.RED);  // Set drawing color to red
+        g.setColor(Color.WHITE);  // Set drawing color to red
         g.fillOval(0, 0, width, height);  // Draw a red circle
     }
 }
