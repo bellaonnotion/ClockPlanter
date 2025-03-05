@@ -39,6 +39,7 @@ public class Place1 extends Place implements Runnable {
         
         segment = new SegmentG(clockCity, 4, 4, Direction.WEST, 100);
         segment.drawLine();
+        System.out.println(myTime);
 
 
 
