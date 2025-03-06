@@ -1,4 +1,6 @@
 package src;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 import becker.robots.*;
 
@@ -12,6 +14,12 @@ public class Place3 extends Place implements Runnable {
    }
 
    public void run() {
+
+          
+      String myTime3 = myTime.substring(2,3);
+      int iMyTime3 = Integer.parseInt(myTime3);
+      System.out.println(iMyTime3);
+
       Segment segment = null;
 
       segment = new SegmentA(clockCity, 1, 13, Direction.EAST, 100);

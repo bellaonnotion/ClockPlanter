@@ -1,4 +1,6 @@
 package src;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import becker.robots.*;
 
 //decimal
@@ -11,6 +13,15 @@ public class Place4 extends Place implements Runnable {
    }
 
    public void run() {
+
+
+      //what to do when one of the indexes is null (set to 0)
+          
+      String myTime4 = myTime.substring(3,4);
+      int iMyTime4 = Integer.parseInt(myTime4);
+      System.out.println(iMyTime4);
+
+
       Segment segment = null;
 
       segment = new SegmentA(clockCity, 1, 18, Direction.EAST, 100);

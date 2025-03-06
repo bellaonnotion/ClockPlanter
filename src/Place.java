@@ -7,10 +7,7 @@ public class Place {
 
     LocalTime time = LocalTime.now();
     String myTime = (DateTimeFormatter.ofPattern("hmm").format(time));
-    
 
-
-    
     
  
   //  private void instructNum() {
